@@ -3,6 +3,7 @@
 ### Giriga comida fusión
 
 - Responsive Website Using PUG, SCSS & JavaScript.
+- Optimized with Gulp for efficient development.
 - Includes a light and dark mode.
 - System of folders that structures and separates the production section from the final publication.
 - Developed first with the Mobile First methodology.
