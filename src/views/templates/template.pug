@@ -1,0 +1,100 @@
+doctype html
+html(lang="es")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Giriga Comida Fusión
+
+        meta(name="description", content="Comida fusión, una mezcla de ingredientes y condimentos de una diversidad cultural y como resultado una explosión de sabores y colores")
+        meta(name="keywords", content="Comida, comida fusión, comida latina, barcelona, diversidad")
+
+        meta(name="author" content="Bryan56gm")
+        meta(name="copyright" content="Copyright bryan56gm")
+
+        <!--=============== FAVICON ===============-->
+        link(rel="shortcut icon" href="assets/favicon.webp" type="image/x-icon")
+        <!--=============== CSS ===============-->
+        link(rel="stylesheet", href="css/styles.css")
+
+    body
+        header#header.header
+            nav.nav.container
+                a(href="#").nav__logo
+                    img(src="assets/img/logo-black.webp", alt="logo").logo
+
+                #nav-menu.nav__menu
+                    ul.nav__list
+                        li.nav__item: a(href="#home").nav__link.active-link Inicio  
+                        li.nav__item: a(href="#popular").nav__link Popular  
+                        li.nav__item: a(href="#menu").nav__link Menú
+                    
+                    //- Close Button
+                    svg(viewBox="0 0 24 24")#nav-close.nav__close
+                        path(d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z")
+
+
+                    img(src="assets/img/leaf-branch-4.webp", alt="nav").nav__leaf-1
+                    img(src="assets/img/leaf-branch-3.webp", alt="nav").nav__leaf-2
+                
+                .nav__buttons
+                    //- Icon Moon - Theme change button
+                    img(src="./assets/icons/moon.svg", alt="")#theme-button.nav__theme
+                    //- Icon Toggle
+                    svg(viewBox="0 0 24 24")#nav-toggle.nav__toggle
+                        path(d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z").nav__toggle-img
+
+
+        <!--=============== MAIN ===============-->                
+        main.main
+            block contentWeb
+
+
+        <!--=============== FOOTER ===============-->
+        footer.footer
+            .container
+                .footer__content
+                    a(href="#").footer__logo 
+                        img(src="assets/img/logo-footer-black.webp", alt="Logo Image").logo
+                        
+                    .footer__item
+                        h3.footer__title Dirección
+                        a(href="https://goo.gl/maps/mew8sPSiDmLYLMqR6" target="_blank").footer__links  C/ Sant Joan
+                            br
+                            | del Polen, 125
+                        p.footer__links 08000 Barcelona
+                        a(href="tel:+34930381485" title="Llamar").footer__links Tél: 930 000 000
+                        
+                    .footer__item
+                        h3.footer__title Redes Sociales
+                        .footer__social
+                            a(href="#").footer__social-link
+                                img(src="./assets/icons/facebook.svg", alt="alt")
+                            a(href="#").footer__social-link
+                                img(src="./assets/icons/instagram.svg", alt="alt")
+                            a(href="#").footer__social-link
+                                img(src="./assets/icons/tiktok.svg", alt="alt")
+                            
+                .footer__info
+                    .footer__payment
+                        img(src="assets/img/footer-card-1.png", alt="Footer image")
+                        img(src="assets/img/footer-card-2.png", alt="Footer image")
+                        img(src="assets/img/footer-card-3.png", alt="Footer image")
+                        img(src="assets/img/footer-card-4.png", alt="Footer image")
+                    span.footer__copy &#169; Copyright Bryan56gm. All rights reserved.
+                    
+                img(src="assets/img/spring-onion.webp", alt="Footer image").footer__onion
+                img(src="assets/img/spinach-leaf.webp", alt="Footer image").footer__spinach
+                img(src="assets/img/leaf-branch-4.webp", alt="Footer image").footer__leaf
+
+
+
+        <!--=============== SCROLL UP ===============-->
+        a(href="#")#scroll-up.scrollup
+            svg(viewBox="0 0 24 24")
+                path(d="M13 7.828V20h-2V7.828l-5.364 5.364-1.414-1.414L12 4l7.778 7.778-1.414 1.414L13 7.828z")
+
+
+        <!--=============== MAIN JS ===============-->
+        script(src="js/scripts-min.js") 
+        

@@ -1,0 +1,76 @@
+extends ../templates/template
+
+block contentWeb
+    <!--==================== HOME ====================-->
+    section#home.home.section
+        .container
+            img(src="assets/img/home-restaurant.webp", alt="Restaurante Giriga Fusión").home__img
+            .home__data
+                h1.home__title Disfruta de la comida fusión
+                p.home__description Una mezcla de ingredientes y condimentos de una diversidad cultural y como resultado una explosión de sabores y colores!
+                a(href="#").button Pide ahora
+                    img(src="./assets/icons/arrow-right.svg", alt="Flecha")
+
+        img(src="assets/img/leaf-branch-1.webp", alt="home image").home__leaf-1
+        img(src="assets/img/leaf-branch-4.webp", alt="home image").home__leaf-2
+
+    <!--==================== POPULAR ====================-->
+    section#popular.popular.section
+        span.section__subtitle Un paseo por las calles 
+            br
+            | de Latinoamérica 
+        h2.section__title Platos más demandados
+
+        .container.swiper.popular__swiper
+            .swiper-wrapper#swiper-element
+                article.swiper-slide.popular__card
+                    img(src="assets/img/popular-campero.webp", alt="Pollo campero" data-index-number="1").popular__img
+                    h3.popular__name Plato #1
+                    p.popular__description Pollo marinado al estilo campero, acompañado de patacones, arroz, salsa de frijoles y ensalada.
+
+                article.swiper-slide.popular__card
+                    img(src="assets/img/popular-patitas-calamar.webp", alt="Patitas de calamar" data-index-number="2").popular__img
+                    h3.popular__name Plato #2
+                    p.popular__description Patitas de calamar con tostones y sofrito de tomates cherry.
+
+                article.swiper-slide.popular__card
+                    img(src="assets/img/popular-salmon-gratinado.webp", alt="Salmón gratinado" data-index-number="3").popular__img
+                    h3.popular__name Plato #3
+                    p.popular__description Salmón gratinado con mayonesa de ajos, patacones, ensalada de col y cilantro.  
+
+                article.swiper-slide.popular__card
+                    img(src="assets/img/popular-paella.webp", alt="Paella" data-index-number="4").popular__img.popular__img--paella
+                    h3.popular__name Plato #4
+                    p.popular__description Paella de ternera, de pollo o de costillas de cerdo ibérico con patacones y ensalada verde (para 2 personas).
+
+                article.swiper-slide.popular__card
+                    img(src="assets/img/popular-costilla-cerdo.webp", alt="Costillas de cerdo" data-index-number="5").popular__img
+                    h3.popular__name Plato #5
+                    p.popular__description Costillas de cerdo con salsa barbacoa, arroz gallo pinto, yuca frita, ensalada de col y aguacate. 
+
+            .swiper-pagination
+            .swiper-button-prev.popular__arrows
+            .swiper-button-next.popular__arrows
+
+    <!--==================== MENU - CARTA ====================-->
+    section#menu.menu.section
+        span.section__subtitle Un sutil equilibrio
+            br
+            | a ritmo de temporada
+        h2.section__title  Nuestro Menú
+        .container
+            .menu__data
+                img(src="assets/img/menu-black-1.webp", alt="Carta del menú 1").menu__img
+                img(src="assets/img/menu-black-2.webp", alt="Carta del menú 2").menu__img
+                img(src="assets/img/menu-black-3.webp", alt="Carta del menú 3").menu__img
+                img(src="assets/img/menu-black-4.webp", alt="Carta del menú 4").menu__img
+            
+            a(href="#").button.menu__button Pide ahora
+                    img(src="./assets/icons/arrow-right.svg", alt="Flecha")
+            
+            img(src="assets/img/spinach-leaf.webp", alt="Recently leaf").menu__spinach
+
+    <!--==================== FULLSCREEN ====================-->
+    #fullscreen.fullscreen
+        svg(viewBox="0 0 24 24")#fullscreen-close.fullscreen__close
+            path(d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z")
