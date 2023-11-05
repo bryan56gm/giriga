@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giriga Comida Fusión</title>
+    <meta name="description" content="Comida fusión, una mezcla de ingredientes y condimentos de una diversidad cultural y como resultado una explosión de sabores y colores">
+    <meta name="keywords" content="Comida, comida fusión, comida latina, barcelona, diversidad">
+    <meta name="author" content="Bryan56gm">
+    <meta name="copyright" content="Copyright bryan56gm"><!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/favicon.webp" type="image/x-icon"><!--=============== CSS ===============-->
+    <link rel="stylesheet" href="css/styles.css?t=1699011489563">
+  </head>
+  <body>
+    <header class="header" id="header">
+      <nav class="nav container"><a class="nav__logo" href="#"><img class="logo" src="assets/img/logo-black.webp" alt="logo"></a>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item"><a class="nav__link active-link" href="#home">Inicio  </a></li>
+            <li class="nav__item"><a class="nav__link" href="#popular">Popular  </a></li>
+            <li class="nav__item"><a class="nav__link" href="#menu">Menú</a></li>
+          </ul>
+          <svg class="nav__close" viewBox="0 0 24 24" id="nav-close">
+            <path d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z"></path>
+          </svg><img class="nav__leaf-1" src="assets/img/leaf-branch-4.webp" alt="nav"><img class="nav__leaf-2" src="assets/img/leaf-branch-3.webp" alt="nav">
+        </div>
+        <div class="nav__buttons"><img class="nav__theme" src="./assets/icons/moon.svg" alt="" id="theme-button">
+          <svg class="nav__toggle" viewBox="0 0 24 24" id="nav-toggle">
+            <path class="nav__toggle-img" d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z"></path>
+          </svg>
+        </div>
+      </nav>
+    </header><!--=============== MAIN ===============-->                
+    <main class="main"><!--==================== HOME ====================-->
+      <section class="home section" id="home">
+        <div class="container"><img class="home__img" src="assets/img/home-restaurant.webp" alt="Restaurante Giriga Fusión">
+          <div class="home__data">
+            <h1 class="home__title">Disfruta de la comida fusión</h1>
+            <p class="home__description">Una mezcla de ingredientes y condimentos de una diversidad cultural y como resultado una explosión de sabores y colores!</p><a class="button" href="#">Pide ahora<img src="./assets/icons/arrow-right.svg" alt="Flecha"></a>
+          </div>
+        </div><img class="home__leaf-1" src="assets/img/leaf-branch-1.webp" alt="home image"><img class="home__leaf-2" src="assets/img/leaf-branch-4.webp" alt="home image">
+      </section><!--==================== POPULAR ====================-->
+      <section class="popular section" id="popular"><span class="section__subtitle">Un paseo por las calles <br>de Latinoamérica </span>
+        <h2 class="section__title">Platos más demandados</h2>
+        <div class="container swiper popular__swiper">
+          <div class="swiper-wrapper" id="swiper-element">
+            <article class="swiper-slide popular__card"><img class="popular__img" src="assets/img/popular-campero.webp" alt="Pollo campero" data-index-number="1">
+              <h3 class="popular__name">Plato #1</h3>
+              <p class="popular__description">Pollo marinado al estilo campero, acompañado de patacones, arroz, salsa de frijoles y ensalada.</p>
+            </article>
+            <article class="swiper-slide popular__card"><img class="popular__img" src="assets/img/popular-patitas-calamar.webp" alt="Patitas de calamar" data-index-number="2">
+              <h3 class="popular__name">Plato #2</h3>
+              <p class="popular__description">Patitas de calamar con tostones y sofrito de tomates cherry.</p>
+            </article>
+            <article class="swiper-slide popular__card"><img class="popular__img" src="assets/img/popular-salmon-gratinado.webp" alt="Salmón gratinado" data-index-number="3">
+              <h3 class="popular__name">Plato #3</h3>
+              <p class="popular__description">Salmón gratinado con mayonesa de ajos, patacones, ensalada de col y cilantro.  </p>
+            </article>
+            <article class="swiper-slide popular__card"><img class="popular__img popular__img--paella" src="assets/img/popular-paella.webp" alt="Paella" data-index-number="4">
+              <h3 class="popular__name">Plato #4</h3>
+              <p class="popular__description">Paella de ternera, de pollo o de costillas de cerdo ibérico con patacones y ensalada verde (para 2 personas).</p>
+            </article>
+            <article class="swiper-slide popular__card"><img class="popular__img" src="assets/img/popular-costilla-cerdo.webp" alt="Costillas de cerdo" data-index-number="5">
+              <h3 class="popular__name">Plato #5</h3>
+              <p class="popular__description">Costillas de cerdo con salsa barbacoa, arroz gallo pinto, yuca frita, ensalada de col y aguacate. </p>
+            </article>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev popular__arrows"></div>
+          <div class="swiper-button-next popular__arrows"></div>
+        </div>
+      </section><!--==================== MENU - CARTA ====================-->
+      <section class="menu section" id="menu"><span class="section__subtitle">Un sutil equilibrio<br>a ritmo de temporada</span>
+        <h2 class="section__title"> Nuestro Menú</h2>
+        <div class="container">
+          <div class="menu__data"><img class="menu__img" src="assets/img/menu-black-1.webp" alt="Carta del menú 1"><img class="menu__img" src="assets/img/menu-black-2.webp" alt="Carta del menú 2"><img class="menu__img" src="assets/img/menu-black-3.webp" alt="Carta del menú 3"><img class="menu__img" src="assets/img/menu-black-4.webp" alt="Carta del menú 4"></div><a class="button menu__button" href="#">Pide ahora<img src="./assets/icons/arrow-right.svg" alt="Flecha"></a><img class="menu__spinach" src="assets/img/spinach-leaf.webp" alt="Recently leaf">
+        </div>
+      </section><!--==================== FULLSCREEN ====================-->
+      <div class="fullscreen" id="fullscreen">
+        <svg class="fullscreen__close" viewBox="0 0 24 24" id="fullscreen-close">
+          <path d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z"></path>
+        </svg>
+      </div>
+    </main><!--=============== FOOTER ===============-->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content"><a class="footer__logo" href="#"> <img class="logo" src="assets/img/logo-footer-black.webp" alt="Logo Image"></a>
+          <div class="footer__item">
+            <h3 class="footer__title">Dirección</h3><a class="footer__links" href="https://goo.gl/maps/mew8sPSiDmLYLMqR6" target="_blank"> C/ Sant Joan<br>del Polen, 125</a>
+            <p class="footer__links">08000 Barcelona</p><a class="footer__links" href="tel:+34930381485" title="Llamar">Tél: 930 000 000</a>
+          </div>
+          <div class="footer__item">
+            <h3 class="footer__title">Redes Sociales</h3>
+            <div class="footer__social"><a class="footer__social-link" href="#"><img src="./assets/icons/facebook.svg" alt="alt"></a><a class="footer__social-link" href="#"><img src="./assets/icons/instagram.svg" alt="alt"></a><a class="footer__social-link" href="#"><img src="./assets/icons/tiktok.svg" alt="alt"></a></div>
+          </div>
+        </div>
+        <div class="footer__info">
+          <div class="footer__payment"><img src="assets/img/footer-card-1.png" alt="Footer image"><img src="assets/img/footer-card-2.png" alt="Footer image"><img src="assets/img/footer-card-3.png" alt="Footer image"><img src="assets/img/footer-card-4.png" alt="Footer image"></div><span class="footer__copy">&#169; Copyright Bryan56gm. All rights reserved.</span>
+        </div><img class="footer__onion" src="assets/img/spring-onion.webp" alt="Footer image"><img class="footer__spinach" src="assets/img/spinach-leaf.webp" alt="Footer image"><img class="footer__leaf" src="assets/img/leaf-branch-4.webp" alt="Footer image">
+      </div>
+    </footer><!--=============== SCROLL UP ===============--><a class="scrollup" href="#" id="scroll-up">
+      <svg viewBox="0 0 24 24">
+        <path d="M13 7.828V20h-2V7.828l-5.364 5.364-1.414-1.414L12 4l7.778 7.778-1.414 1.414L13 7.828z"></path>
+      </svg></a><!--=============== MAIN JS ===============-->
+    <script src="js/scripts-min.js?t=1699011489563"> </script>
+  </body>
+</html>
